@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('CLONE SCM FROM GITHUB') {
             steps {
-                echo 'Cloning bacth11 code '
+                echo 'Cloning bacth11 code'
 				git 'https://github.com/saikiran181094/batch11.git'
 
             }
@@ -12,8 +12,8 @@ pipeline {
 		
         stage('BUILD ARTIFACT') {
             steps {
-                echo 'building code using maven '
-			    sh 'mvn clean install '
+                echo 'building code using maven'
+			    sh 'mvn clean install'
             }
         }	
 		
